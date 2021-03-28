@@ -1,65 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import { title, text, btn } from '../styles/Home.module.css'
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <div>
+      <h1 className = {title}>This is a Homepage</h1>
+      <p className = {text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et dolorem sed voluptatem nulla nam, reiciendis enim distinctio aliquid consequuntur animi in illo iure doloremque non voluptate. Adipisci pariatur odio incidunt earum odit, delectus recusandae doloremque eveniet iure. Optio delectus harum eaque, sint et ut dicta rerum laudantium, inventore eius facere. A iure itaque quis accusantium aliquam enim delectus rerum in velit. Pariatur, magnam blanditiis soluta sit repudiandae recusandae hic officia vero earum harum voluptatem. Accusantium, id quod voluptas beatae earum incidunt quasi sapiente, soluta pariatur eos praesentium. Molestiae inventore dolorem error eum iusto odit est aliquam, aperiam minus quis.</p>
+      <button className={btn}>Explore more</button>
     </div>
   )
 }
