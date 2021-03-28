@@ -1,5 +1,5 @@
-import React from 'react'
-import {developer__list, developer} from '../styles/About.module.css'
+import Link from 'next/link'
+import {developer__list, developer} from '../../styles/About.module.css'
 
 export const getStaticProps = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -10,21 +10,21 @@ export const getStaticProps = async () => {
     }
 }
 
-const about = ({users}) => {
+const authors = ({users }) => {
     return (
         <div>
             <h1 className={developer__list}>Here is Our Developer</h1>
             {
                 users.map (user => (
-                    <div key={user.id}>
+                    <Link href = { '/authors/' + user.id} key={user.id}>
                         <a>
                             <h3 className={developer}>{user.name}</h3>
                         </a>
-                    </div>
+                    </Link>
                 ))
             }
         </div>
     )
 }
 
-export default about
+export default authors
